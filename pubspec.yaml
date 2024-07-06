@@ -1,0 +1,89 @@
+name: e_commerce_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  firebase_core: ^2.31.0
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  flutter_native_splash: ^2.4.0
+  http: ^1.2.1
+  intl: ^0.19.0
+  logger: ^2.2.0
+  url_launcher: ^6.2.6
+  smooth_page_indicator: ^1.1.0
+  iconsax: ^0.0.8
+  carousel_slider: ^4.2.1
+  readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
+  lottie: ^3.1.2
+  connectivity_plus: 5.0.1
+  cloud_firestore: ^4.17.4
+  firebase_auth: ^4.19.6
+  google_sign_in: ^6.2.1
+  google_api_availability: ^5.0.0
+  shimmer: ^3.0.0
+  image_picker: ^1.1.2
+  firebase_storage: ^11.7.7
+  cached_network_image: ^3.3.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^3.0.0
+
+
+flutter:
+
+
+  # the material Icons class.
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/on_boarding_images/
+    - assets/logos/
+    - assets/images/animations/
+    - assets/images/banners/
+    - assets/images/user/
+    - assets/icons/brands/
+    - assets/images/reviews/
+    - assets/icons/payment_methods/
+    - assets/images/products/
+    - assets/icons/categories/
+
+  fonts:
+      - family: Poppins
+        fonts:
+          - asset: assets/fonts/Poppins-Light.ttf
+            weight: 300
+          - asset: assets/fonts/Poppins-Regular.ttf
+            weight: 400
+          - asset: assets/fonts/Poppins-Medium.ttf
+            weight: 500
+          - asset: assets/fonts/Poppins-MediumItalic.ttf
+            weight: 500
+            style: italic
+          - asset: assets/fonts/Poppins-SemiBold.ttf
+            weight: 600
+          - asset: assets/fonts/Poppins-Bold.ttf
+            weight: 800
+
+
+
+
