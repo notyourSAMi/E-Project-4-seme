@@ -15,7 +15,6 @@ class AppProductImageSlider extends StatelessWidget {
     super.key,
   });
 
-
   @override
   Widget build(BuildContext context) {
     final darkMode = AppHelperFunction.isDarkMode(context);
@@ -27,11 +26,9 @@ class AppProductImageSlider extends StatelessWidget {
             const SizedBox(
               height: 400,
               child: Padding(
-                padding:
-                EdgeInsets.all(AppSizes.productImageRadius * 2),
+                padding: EdgeInsets.all(AppSizes.productImageRadius * 2),
                 child: Center(
-                    child: Image(
-                        image: AssetImage(AppImages.productImage5))),
+                    child: Image(image: AssetImage(AppImages.productImage5))),
               ),
             ),
             Positioned(
@@ -40,27 +37,30 @@ class AppProductImageSlider extends StatelessWidget {
               left: AppSizes.defaultSpace,
               child: SizedBox(
                 height: 80,
-                child: ListView.separated(
-                  itemCount: 4,
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  physics: const AlwaysScrollableScrollPhysics(),
-                  separatorBuilder: (_, __) => const SizedBox(
-                    width: AppSizes.spaceBtwItems,
-                  ),
-                  itemBuilder: (_, index) => AppRoundedImage(
-                      width: 80,
-                      backgroundColor: darkMode ? AppColors.dark : AppColors.white,
-                      border: Border.all(color: AppColors.primary),
-                      padding: const EdgeInsets.all(AppSizes.sm),
-                      imageUrl: AppImages.productImage3),
-                ),
+                // child: ListView.separated(
+                //   itemCount: 4,
+                //   shrinkWrap: true,
+                //   scrollDirection: Axis.horizontal,
+                //   physics: const AlwaysScrollableScrollPhysics(),
+                //   separatorBuilder: (_, __) => const SizedBox(
+                //     width: AppSizes.spaceBtwItems,
+                //   ),
+                //   itemBuilder: (_, index) => AppRoundedImage(
+                //       width: 80,
+                //       backgroundColor: darkMode ? AppColors.dark : AppColors.white,
+                //       border: Border.all(color: AppColors.primary),
+                //       padding: const EdgeInsets.all(AppSizes.sm),
+                //       imageUrl: AppImages.productImage3),
+                // ),
               ),
             ),
-            const   CustomAppBar(
+            const CustomAppBar(
               showBackArrow: true,
               actions: [
-                AppCircularIcon(icon: Iconsax.heart5, color: Colors.red,)
+                AppCircularIcon(
+                  icon: Iconsax.heart5,
+                  color: Colors.red,
+                )
               ],
             )
           ],

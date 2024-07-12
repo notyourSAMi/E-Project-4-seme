@@ -24,41 +24,13 @@ class BottomAddToCartWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
-              const AppCircularIcon(
-                icon: Iconsax.minus,
-                backgroundColor: AppColors.darkGrey,
-                width: 40,
-                height: 40,
-                color: AppColors.white,
-              ),
-              const SizedBox(
-                width: AppSizes.spaceBtwItems,
-              ),
-              Text(
-                '2',
-                style: Theme.of(context).textTheme.titleSmall,
-              ),
-              const SizedBox(
-                width: AppSizes.spaceBtwItems,
-              ),
-              const AppCircularIcon(
-                icon: Iconsax.add,
-                backgroundColor: AppColors.black,
-                width: 40,
-                height: 40,
-                color: AppColors.white,
-              ),
-            ],
-          ),
-          ElevatedButton(onPressed: () {},
+          ElevatedButton(
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.all(AppSizes.md),
-                backgroundColor: AppColors.black,
-                side: const BorderSide(color: AppColors.black)
-              ),
-              child: const Text('Add to Cart'))
+                  padding: const EdgeInsets.all(AppSizes.md),
+                  backgroundColor: AppColors.black,
+                  side: const BorderSide(color: AppColors.black)),
+              child: const Text('Shon On Map'))
         ],
       ),
     );
